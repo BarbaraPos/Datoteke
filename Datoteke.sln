@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36212.18 d17.14
+VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datoteke", "Datoteke\Datoteke.csproj", "{5B455D7B-34D0-473B-BE07-14021068401E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datoteke2", "Datoteke2\Datoteke2.csproj", "{B9D49476-5608-4BEE-8250-652479D2E79A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5B455D7B-34D0-473B-BE07-14021068401E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B455D7B-34D0-473B-BE07-14021068401E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B455D7B-34D0-473B-BE07-14021068401E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D49476-5608-4BEE-8250-652479D2E79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D49476-5608-4BEE-8250-652479D2E79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D49476-5608-4BEE-8250-652479D2E79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D49476-5608-4BEE-8250-652479D2E79A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
