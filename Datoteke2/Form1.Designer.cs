@@ -61,12 +61,14 @@
             this.unosToolStripMenuItem.Name = "unosToolStripMenuItem";
             this.unosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.unosToolStripMenuItem.Text = "Unos";
+            this.unosToolStripMenuItem.Click += new System.EventHandler(this.unosToolStripMenuItem_Click);
             // 
             // prikazUčenikaToolStripMenuItem
             // 
             this.prikazUčenikaToolStripMenuItem.Name = "prikazUčenikaToolStripMenuItem";
             this.prikazUčenikaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prikazUčenikaToolStripMenuItem.Text = "Prikaz učenika";
+            this.prikazUčenikaToolStripMenuItem.Click += new System.EventHandler(this.prikazUčenikaToolStripMenuItem_Click);
             // 
             // pomoćToolStripMenuItem
             // 

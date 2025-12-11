@@ -16,5 +16,17 @@ namespace Datoteke2
         {
             InitializeComponent();
         }
+
+        private void prikazUčenikaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 frm3=new Form3();
+            frm3.ShowDialog();
+        }
+
+        private void unosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 frm2=new Form2();
+            frm2.ShowDialog();
+        }
     }
 }
