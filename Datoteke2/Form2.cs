@@ -22,7 +22,7 @@ namespace Datoteke2
         private void button1_Click(object sender, EventArgs e)
         {
             string line;
-            line=txtIme.Text+"|"+txtPrezime+"|"+cbRazred+"|"+cbUspjeh;
+            line=txtIme.Text+"|"+txtPrezime.Text+"|"+cbRazred.Text+"|"+cbUspjeh.Text;
             StreamWriter sw = new StreamWriter("imena.txt");
             sw.WriteLine(line);
             sw.Close();

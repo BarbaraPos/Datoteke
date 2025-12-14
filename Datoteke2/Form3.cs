@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Datoteke2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Datoteke2
 {
@@ -21,7 +23,7 @@ namespace Datoteke2
         private void button3_Click(object sender, EventArgs e)
         {
             Ucenici.Items.Clear();
-            string odabraniRazred = comboBox1.SelectedItem as string;
+            string odabraniRazred = comboBox1.Text;
             if (!File.Exists("imena.txt"))
             {
                 MessageBox.Show("imena.txt ne postoji");
@@ -29,25 +31,19 @@ namespace Datoteke2
             }
             string line;
             StreamReader sr = new StreamReader("imena.txt");
-            line = sr.ReadLine();
-            List<string> lines = new List<string>();
-            while (line != null)
+            while ((line =sr.ReadLine()) != null)
             {
-                lines.Add(line);
-            }
-            for (int i = 0; i < lines.Count; i++)
-            {
-                List<string> parts = lines[i].Split('|').ToList();
-                if (parts[2] == odabraniRazred)
+                List<string> parts = line.Split('|').ToList();
+                if (odabraniRazred == null)
                 {
-                    Ucenici.Items.Add(lines[i]);
+                    Ucenici.Items.Add(line.Replace("|"," "));
                 }
-                else if(odabraniRazred==null)
+                else if (parts[2] == odabraniRazred)
                 {
-                    Ucenici.Items.Add(lines[i]);
+                    Ucenici.Items.Add(line);
                 }
             }
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
